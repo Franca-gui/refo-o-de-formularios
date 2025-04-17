@@ -11,18 +11,19 @@
 
 <body>
     <header>
-        <h1>bem vindo!</h1>
-        <h2>te conectaremos em um minuto</h2>
+        <div class="flex">
+        <img src="autodesk.png" alt="">
+        <div class="divCenter">
+        <h1>bem vindo a porta de login!</h1>
+        <h2>este é um formulario de teste feito por mim durante uma aula do meu curso tecnico</h2>
         <h3>apenas preencha esse pequeno formulario...</h3>
+    </div>
+    </div>
     </header>
-    <section>
-
-    </section>
     <div class="flex">
-        
 
         <div class="wrapper divCenter">
-
+          
             </section>
             <section class="formulario" id="rcorners1">
                 <form action="">
@@ -49,19 +50,32 @@
                     <br>
                     <br>
                     <div class="divTrans">
-                        <h1>sex?</h1>
+                        <label for="phone">numero de contato:</label><br><br>
+                        <input type="tel" id="phone" name="phone" placeholder="123-45-678"
+                            pattern="(00) [0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+                        <small>Format: 123-45-678</small><br><br>
+                        <input type="submit" value="Submit">
+                    </div>
+                    
+                    <br>
+                </section>
+                <br>
+                <section class="formulario" id="rcorners1">
+                    <br>
+                    <div class="divTrans">
+                        <h1>Como vc se identifica?</h1>
                         <input type="radio" id="man" name="fav_language" value="man">
                         <label for="man">man</label><br>
                         <input type="radio" id="woman" name="fav_language" value="woman">
                         <label for="womam">woman</label><br>
                         <input type="radio" id="all" name="fav_language" value="all">
-                        <label for="all">all</label>
+                        <label for="all">outro</label>
                     </div>
                     <br>
                     <br>
                     <div class="divTrans">
                         <label for="transporte"></label>
-                        <h1>você tem uma...</h1>
+                        <h1>Seu método de transporte disponivel</h1>
                         <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
                         <label for="vehicle1"> bike</label><br>
                         <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
@@ -94,7 +108,7 @@
                     </div>
                     <br>
                     <div class="divTrans">
-                        <label for="birthday">Birthday:</label>
+                        <label for="birthday">Seu aniversario:</label>
                         <input type="date" id="birthday" name="birthday">
                     </div>
                     <br>
@@ -104,17 +118,9 @@
                     </div>
                     <br>
                     <div class="divTrans">
-
-                        <input type="image" src="bingus.jfif" alt="Submit" onclick="alert('Bingus!!!')" width="100"
+                        <p>este é o bingus, você clicar nele ou não é sua escolha, mas isso não ira fazer absolutamente nada para você ou para ele, você clicaria nele?</p>
+                        <input type="image" src="bingus.jfif"  onclick="alert('Bingus!!!')" width="100"
                             height="100">
-                    </div>
-                    <br>
-                    <div class="divTrans">
-                        <label for="phone">numero de contato:</label><br><br>
-                        <input type="tel" id="phone" name="phone" placeholder="123-45-678"
-                            pattern="(00) [0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
-                        <small>Format: 123-45-678</small><br><br>
-                        <input type="submit" value="Submit">
                     </div>
                     <br>
                     <br>
@@ -131,10 +137,10 @@
 
                         <input type="radio" id="motivoProf" name="motivo" value="motivoProf">
                         <label for="motivoProf">Eu sou seu professor do tecnico, quero validar seu trabalho</label><br>
-                        <input type="radio" id="motivoAmigo" name="motivo" value="minesota">
-                        <label for="minesota">minesota</label><br>
-                        <input type="radio" id="CheeseBurger" name="pais" value="CheeseBurger">
-                        <label for="CheeseBurger">CheeseBurger</label>
+                        <input type="radio" id="motivoAmigo" name="motivo" value="motivoAmigo">
+                        <label for="motivoAmigo">Eu sou um amigo seu que entrou por um link que vc me mandou</label><br>
+                        <input type="radio" id="motivoEstranho" name="motivo" value="motivoEstranho">
+                        <label for="motivoEstranho">Encontrei esse link por aí</label>
                     </div>
                     <br>
                     <br>
@@ -213,8 +219,10 @@
                     <input type="reset" value="keep suffering">
                     <input type="submit" value="escape suffering">
                     <br>
+                </section>
         </div>
         </section>
+
     </div>
     </section>
 </body>
