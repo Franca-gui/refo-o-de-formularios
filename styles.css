@@ -4,7 +4,9 @@ body{
     
     
 }
-
+.wrapper{
+  padding-left: 32%;
+}
 
 input[type="text"] {
   display: block;
